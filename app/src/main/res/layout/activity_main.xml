@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.gesture.GestureOverlayView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gestures"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadeOffset="800"
+    android:gestureStrokeType="multiple" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/degradado"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/asteroides"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/TextView"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jugar"
+        android:id="@+id/but_jugar"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/configurar"
+        android:id="@+id/but_config"
+        android:textSize="25sp"
+        android:onClick="lanzarPreferencias"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/acerca_de"
+        android:id="@+id/but_acerca"
+        android:textSize="25sp"
+        android:onClick="lanzarAcercaDe" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/puntuaciones"
+        android:id="@+id/but_puntuaciones"
+        android:textSize="25sp"
+        android:onClick="lanzarPuntuaciones"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salir"
+        android:id="@+id/but_salir"
+        android:textSize="25sp"
+        android:onClick="salir"/>
+</LinearLayout>
+</android.gesture.GestureOverlayView>
